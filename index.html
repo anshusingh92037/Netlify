@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Paul Haggis News: Latest Updates, Films & Industry Insights</title>
+  <meta name="description" content="Stay updated with Paul Haggis News, featuring the latest updates, film highlights, career milestones, and media coverage surrounding the acclaimed filmmaker and screenwriter.">
+<link rel="canonical" href="https://yourwebsite.com/paul-haggis-news"/>
+<!-- Schema Markup (JSON-LD) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "NewsArticle",
+  "headline": "Paul Haggis News: Latest Updates and Film Highlights",
+  "description": "Stay updated with Paul Haggis News, featuring the latest updates, film highlights, career milestones, and media coverage surrounding the acclaimed filmmaker and screenwriter.",
+  "author": {
+    "@type": "Person",
+    "name": "Editorial Team"
+  },
+  "about": {
+    "@type": "Person",
+    "name": "Paul Haggis"
+  },
+  
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://yourwebsite.com/paul-haggis-news"
+  },
+  "datePublished": "2026-05-06",
+  "dateModified": "2026-05-06"
+}
+</script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --gold: #F4A61F;
+      --gold-light: #FFD06E;
+      --gold-dim: #C4830E;
+      --ink: #1A1208;
+      --cream: #FDF6EC;
+      --warm-white: #FFFCF5;
+      --text-muted: #7A6A50;
+      --section-bg: #FFF8ED;
+      --card-bg: #FFFFFF;
+      --border: #EFE0C0;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--warm-white);
+      color: var(--ink);
+      overflow-x: hidden;
+    }
+
+    /* ─── HEADER ─────────────────────────────────────────── */
+    header {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      background: rgba(253, 246, 236, 0.92);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border);
+      padding: 0 5%;
+      height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .header-logo {
+      font-family: 'Playfair Display', serif;
+      font-weight: 900;
+      font-size: 1.5rem;
+      color: var(--ink);
+      letter-spacing: -0.5px;
+      text-decoration: none;
+    }
+
+    .header-logo span { color: var(--gold); }
+
+    .header-right {
+      display: flex;
+      align-items: center;
+      gap: 1.2rem;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 0.75rem;
+      align-items: center;
+    }
+
+    .social-icons a {
+      width: 36px; height: 36px;
+      border-radius: 50%;
+      background: var(--gold);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.2s, transform 0.2s;
+      text-decoration: none;
+    }
+
+    .social-icons a:hover { background: var(--gold-dim); transform: translateY(-2px); }
+
+    .social-icons svg { width: 16px; height: 16px; fill: white; }
+
+    .btn-header {
+      background: var(--gold);
+      color: var(--ink);
+      font-weight: 600;
+      font-size: 0.82rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      border: none;
+      padding: 0.55rem 1.2rem;
+      border-radius: 50px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.2s;
+    }
+
+    .btn-header:hover { background: var(--gold-dim); transform: translateY(-1px); }
+
+    /* ─── HERO ───────────────────────────────────────────── */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+      padding: 120px 5% 160px;
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 70% 60% at 70% 50%, rgba(244,166,31,0.12) 0%, transparent 70%),
+        radial-gradient(ellipse 40% 40% at 20% 80%, rgba(244,166,31,0.08) 0%, transparent 60%),
+        linear-gradient(135deg, var(--warm-white) 0%, var(--cream) 100%);
+      z-index: 0;
+    }
+
+    .hero-grid-pattern {
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(244,166,31,0.06) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(244,166,31,0.06) 1px, transparent 1px);
+      background-size: 60px 60px;
+      z-index: 0;
+    }
+
+    .hero-content { position: relative; z-index: 1; max-width: 680px; }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--gold);
+      color: var(--ink);
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 0.4rem 1rem;
+      border-radius: 50px;
+      margin-bottom: 1.5rem;
+      animation: fadeUp 0.7s ease both;
+    }
+
+    .hero-badge::before { content: '★'; font-size: 0.7rem; }
+
+    h1.hero-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(3rem, 6vw, 5.5rem);
+      font-weight: 900;
+      line-height: 1.05;
+      color: var(--ink);
+      margin-bottom: 1.5rem;
+      animation: fadeUp 0.7s 0.1s ease both;
+    }
+
+    h1.hero-title em { font-style: italic; color: var(--gold-dim); }
+
+    .hero-desc {
+      font-size: 1.1rem;
+      line-height: 1.75;
+      color: var(--text-muted);
+      margin-bottom: 2.5rem;
+      max-width: 540px;
+      animation: fadeUp 0.7s 0.2s ease both;
+    }
+
+    .hero-btns {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      animation: fadeUp 0.7s 0.3s ease both;
+    }
+
+    .btn-primary {
+      background: var(--gold);
+      color: var(--ink);
+      font-weight: 700;
+      font-size: 0.92rem;
+      letter-spacing: 0.04em;
+      padding: 0.85rem 2rem;
+      border-radius: 50px;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: all 0.25s;
+      box-shadow: 0 4px 20px rgba(244,166,31,0.3);
+    }
+
+    .btn-primary:hover { background: var(--gold-dim); transform: translateY(-2px); box-shadow: 0 8px 30px rgba(244,166,31,0.4); }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--ink);
+      font-weight: 600;
+      font-size: 0.92rem;
+      padding: 0.85rem 2rem;
+      border-radius: 50px;
+      border: 2px solid var(--border);
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: all 0.25s;
+    }
+
+    .btn-outline:hover { border-color: var(--gold); color: var(--gold-dim); transform: translateY(-2px); }
+
+    .hero-accent {
+      position: absolute;
+      right: 5%;
+      top: 50%;
+      transform: translateY(-50%);
+      width: clamp(260px, 35vw, 500px);
+      aspect-ratio: 3/4;
+      background: linear-gradient(135deg, var(--gold) 0%, var(--gold-dim) 100%);
+      border-radius: 40% 60% 55% 45% / 50% 40% 60% 50%;
+      opacity: 0.12;
+      z-index: 0;
+      animation: morph 10s ease-in-out infinite alternate;
+    }
+
+    /* ─── SECTION SHARED ─────────────────────────────────── */
+    section { padding: 100px 5%; }
+
+    .section-label {
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--gold-dim);
+      margin-bottom: 0.75rem;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    .section-label::before {
+      content: '';
+      display: block;
+      width: 30px;
+      height: 2px;
+      background: var(--gold);
+      border-radius: 2px;
+    }
+
+    h2.section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2rem, 3.5vw, 3rem);
+      font-weight: 900;
+      line-height: 1.15;
+      color: var(--ink);
+      margin-bottom: 1.25rem;
+    }
+
+    .section-desc {
+      font-size: 1.05rem;
+      line-height: 1.8;
+      color: var(--text-muted);
+      max-width: 600px;
+    }
+
+    /* ─── LEGACY ─────────────────────────────────────────── */
+    .legacy {
+      background: var(--section-bg);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .legacy-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; }
+    .legacy-left .section-desc { margin-bottom: 1.5rem; }
+    .legacy-right { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; }
+
+    .legacy-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 1.5rem;
+      transition: transform 0.25s, box-shadow 0.25s;
+    }
+
+    .legacy-card:hover { transform: translateY(-4px); box-shadow: 0 12px 36px rgba(244,166,31,0.12); }
+    .legacy-card .icon { font-size: 1.8rem; margin-bottom: 0.75rem; }
+    .legacy-card h4 { font-family: 'Playfair Display', serif; font-size: 1rem; font-weight: 700; margin-bottom: 0.4rem; color: var(--ink); }
+    .legacy-card p { font-size: 0.83rem; color: var(--text-muted); line-height: 1.6; }
+
+    /* ─── FILMS ──────────────────────────────────────────── */
+    .films-header { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 3rem; flex-wrap: wrap; gap: 1rem; }
+
+    .films-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; }
+
+    .film-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      overflow: hidden;
+      transition: transform 0.3s, box-shadow 0.3s;
+      cursor: pointer;
+    }
+
+    .film-card:hover { transform: translateY(-6px); box-shadow: 0 20px 50px rgba(244,166,31,0.15); }
+    .film-card-banner { height: 8px; background: linear-gradient(90deg, var(--gold), var(--gold-light)); }
+    .film-card-body { padding: 1.75rem; }
+    .film-year { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold-dim); margin-bottom: 0.5rem; }
+    .film-card h3 { font-family: 'Playfair Display', serif; font-size: 1.35rem; font-weight: 800; color: var(--ink); margin-bottom: 0.75rem; }
+    .film-card p { font-size: 0.88rem; color: var(--text-muted); line-height: 1.7; margin-bottom: 1.25rem; }
+    .film-awards { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .award-tag { background: rgba(244,166,31,0.12); color: var(--gold-dim); font-size: 0.72rem; font-weight: 600; padding: 0.28rem 0.75rem; border-radius: 50px; letter-spacing: 0.03em; }
+
+    /* ─── INFLUENCE ──────────────────────────────────────── */
+    .influence { background: var(--ink); color: var(--cream); position: relative; overflow: hidden; }
+
+    .influence::before {
+      content: '';
+      position: absolute;
+      top: -100px; right: -100px;
+      width: 400px; height: 400px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(244,166,31,0.15) 0%, transparent 70%);
+    }
+
+    .influence::after {
+      content: '';
+      position: absolute;
+      bottom: -80px; left: -80px;
+      width: 300px; height: 300px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(244,166,31,0.1) 0%, transparent 70%);
+    }
+
+    .influence .section-label { color: var(--gold-light); }
+    .influence .section-label::before { background: var(--gold-light); }
+    .influence h2.section-title { color: var(--cream); }
+
+    .influence-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 3.5rem; position: relative; z-index: 1; }
+
+    .influence-card {
+      border: 1px solid rgba(244,166,31,0.2);
+      border-radius: 16px;
+      padding: 2rem;
+      transition: border-color 0.3s, background 0.3s;
+    }
+
+    .influence-card:hover { border-color: var(--gold); background: rgba(244,166,31,0.06); }
+    .influence-card .num { font-family: 'Playfair Display', serif; font-size: 3.5rem; font-weight: 900; color: var(--gold); line-height: 1; margin-bottom: 0.5rem; opacity: 0.6; }
+    .influence-card h4 { font-family: 'Playfair Display', serif; font-size: 1.1rem; font-weight: 700; margin-bottom: 0.75rem; color: var(--gold-light); }
+    .influence-card p { font-size: 0.88rem; line-height: 1.7; color: rgba(253,246,236,0.65); }
+
+    /* ─── QUOTE ──────────────────────────────────────────── */
+    .quote-section {
+      background: var(--section-bg);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      text-align: center;
+      padding: 80px 10%;
+    }
+
+    .quote-text {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.4rem, 3vw, 2.2rem);
+      font-weight: 400;
+      font-style: italic;
+      line-height: 1.6;
+      color: var(--ink);
+      margin-bottom: 1.5rem;
+    }
+
+    .quote-text strong { color: var(--gold-dim); font-weight: 700; }
+    .quote-author { font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted); }
+
+    /* ─── PR LINKS SECTION ───────────────────────────────── */
+    .pr-section {
+      background: var(--warm-white);
+      padding: 80px 5%;
+      border-top: 1px solid var(--border);
+    }
+
+    .pr-section-header {
+      margin-bottom: 2.5rem;
+    }
+
+    .pr-list {
+      max-width: 860px;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      overflow: hidden;
+      background: var(--card-bg);
+    }
+
+    .pr-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+      padding: 1.2rem 1.75rem;
+      border-bottom: 1px solid var(--border);
+      text-decoration: none;
+      color: inherit;
+      transition: background 0.2s;
+    }
+
+    .pr-row:last-child { border-bottom: none; }
+    .pr-row:hover { background: rgba(244,166,31,0.05); }
+
+    .pr-row-left {
+      display: flex;
+      align-items: center;
+      gap: 1.1rem;
+      min-width: 0;
+    }
+
+    .pr-num {
+      font-family: 'Playfair Display', serif;
+      font-size: 0.9rem;
+      font-weight: 900;
+      color: var(--gold);
+      opacity: 0.45;
+      min-width: 22px;
+      flex-shrink: 0;
+    }
+
+    .pr-text { display: flex; flex-direction: column; gap: 0.2rem; min-width: 0; }
+
+    .pr-source {
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      color: var(--gold-dim);
+    }
+
+    .pr-title {
+      font-size: 0.93rem;
+      font-weight: 600;
+      color: var(--ink);
+      line-height: 1.4;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .pr-cta {
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--gold-dim);
+      white-space: nowrap;
+      flex-shrink: 0;
+      transition: color 0.2s;
+    }
+
+    .pr-row:hover .pr-cta { color: var(--gold); }
+
+    /* ─── CTA ─────────────────────────────────────────────── */
+    .cta-section { text-align: center; }
+
+    .cta-inner {
+      background: linear-gradient(135deg, var(--gold) 0%, var(--gold-dim) 100%);
+      border-radius: 28px;
+      padding: 5rem 10%;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta-inner::before { content: ''; position: absolute; top: -60px; right: -60px; width: 250px; height: 250px; border-radius: 50%; background: rgba(255,255,255,0.12); }
+    .cta-inner::after { content: ''; position: absolute; bottom: -40px; left: -40px; width: 180px; height: 180px; border-radius: 50%; background: rgba(255,255,255,0.08); }
+
+    .cta-inner h2 { font-family: 'Playfair Display', serif; font-size: clamp(2rem, 4vw, 3rem); font-weight: 900; color: var(--ink); margin-bottom: 1rem; position: relative; z-index: 1; }
+    .cta-inner p { font-size: 1.05rem; color: rgba(26,18,8,0.75); margin-bottom: 2.5rem; position: relative; z-index: 1; }
+    .cta-btns { display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; position: relative; z-index: 1; }
+
+    .btn-dark {
+      background: var(--ink);
+      color: var(--gold-light);
+      font-weight: 700;
+      font-size: 0.92rem;
+      padding: 0.9rem 2.2rem;
+      border-radius: 50px;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: all 0.25s;
+    }
+
+    .btn-dark:hover { background: #2d1f0a; transform: translateY(-2px); }
+
+    .btn-white {
+      background: white;
+      color: var(--ink);
+      font-weight: 600;
+      font-size: 0.92rem;
+      padding: 0.9rem 2.2rem;
+      border-radius: 50px;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: all 0.25s;
+    }
+
+    .btn-white:hover { background: var(--cream); transform: translateY(-2px); }
+
+    /* ─── FOOTER ─────────────────────────────────────────── */
+    footer { background: var(--ink); color: var(--cream); padding: 60px 5% 30px; }
+
+    .footer-top {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr;
+      gap: 3rem;
+      padding-bottom: 3rem;
+      border-bottom: 1px solid rgba(253,246,236,0.1);
+      margin-bottom: 2rem;
+    }
+
+    .footer-brand h3 { font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 900; color: var(--gold); margin-bottom: 0.75rem; }
+    .footer-brand p { font-size: 0.88rem; line-height: 1.7; color: rgba(253,246,236,0.55); margin-bottom: 1.25rem; }
+
+    .footer-social { display: flex; gap: 0.75rem; }
+
+    .footer-social a {
+      width: 36px; height: 36px;
+      border-radius: 50%;
+      background: rgba(244,166,31,0.15);
+      border: 1px solid rgba(244,166,31,0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.2s;
+      text-decoration: none;
+    }
+
+    .footer-social a:hover { background: var(--gold); }
+    .footer-social svg { width: 15px; height: 15px; fill: var(--gold-light); }
+    .footer-social a:hover svg { fill: var(--ink); }
+
+    .footer-col h4 { font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--gold); margin-bottom: 1rem; }
+    .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 0.55rem; }
+    .footer-col ul li a { font-size: 0.88rem; color: rgba(253,246,236,0.55); text-decoration: none; transition: color 0.2s; }
+    .footer-col ul li a:hover { color: var(--gold-light); }
+
+    .footer-bottom { display: flex; justify-content: space-between; align-items: center; font-size: 0.82rem; color: rgba(253,246,236,0.35); }
+
+    /* ─── ANIMATIONS ─────────────────────────────────────── */
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes morph { from { border-radius: 40% 60% 55% 45% / 50% 40% 60% 50%; } to { border-radius: 60% 40% 45% 55% / 40% 60% 50% 60%; } }
+
+    .reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .reveal.visible { opacity: 1; transform: none; }
+
+    /* ─── RESPONSIVE ─────────────────────────────────────── */
+    @media (max-width: 900px) {
+      .legacy-inner { grid-template-columns: 1fr; gap: 3rem; }
+      .influence-grid { grid-template-columns: 1fr 1fr; }
+      .footer-top { grid-template-columns: 1fr 1fr; }
+      .pr-title { white-space: normal; }
+    }
+
+    @media (max-width: 600px) {
+      .hero-accent { display: none; }
+      .legacy-right { grid-template-columns: 1fr; }
+      .influence-grid { grid-template-columns: 1fr; }
+      .footer-top { grid-template-columns: 1fr; }
+      .films-header { flex-direction: column; align-items: flex-start; }
+      .pr-row { flex-direction: column; align-items: flex-start; gap: 0.5rem; }
+      .pr-cta { align-self: flex-end; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ─── HEADER ─── -->
+  <header>
+    <a href="#hero" class="header-logo">Paul<span> Haggis News</span></a>
+    <div class="header-right">
+      <div class="social-icons">
+        <a href="https://www.instagram.com/paulhaggis/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        </a>
+        <a href="https://www.youtube.com/@paul-haggis-news" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+          <svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+        </a>
+      </div>
+      
+    </div>
+  </header>
+
+  <!-- ─── HERO ─── -->
+  <section class="hero" id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-grid-pattern"></div>
+    <div class="hero-accent"></div>
+    <div class="hero-content">
+      <div class="hero-badge">Oscar-Winning Filmmaker</div>
+      <h1 class="hero-title">Paul Haggis News: Breaking Stories of an Oscar-Winning Filmmaker</h1>
+      <p class="hero-desc">Stay updated with the latest insights, and stories surrounding Paul Haggis News, the Oscar-winning filmmaker known for impactful cinema.</p>
+      <div class="hero-btns">
+        <a href="https://www.crunchbase.com/person/paul-haggis-news" target="_blank" rel="noopener noreferrer" class="btn-primary">
+          <span>Explore Paul Haggis News</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#press" class="btn-outline">Explore Paul Haggis News in Media</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── LEGACY ─── -->
+  <section class="legacy" id="legacy">
+    <div class="legacy-inner reveal">
+      <div class="legacy-left">
+        <div class="section-label">His Legacy</div>
+        <h2 class="section-title">Paul Haggis News Highlights a Legacy of Powerful Filmmaking</h2>
+        <p class="section-desc">Paul Haggis continues to remain a significant name in global cinema, and Paul Haggis News consistently brings forward the latest updates surrounding his creative journey. Known for his ability to craft emotionally driven and thought-provoking narratives, his work continues to resonate with audiences and critics alike.</p>
+        <p class="section-desc" style="margin-top:1rem;">Recent Paul Haggis News coverage reflects renewed interest in his filmmaking style, with discussions around his past projects and their lasting cultural impact gaining momentum across film communities.</p>
+        <a href="#films" class="btn-primary" style="margin-top:2rem; display:inline-flex;">
+          <span>Paul Haggis Movies</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+      <div class="legacy-right">
+        <div class="legacy-card">
+          <div class="icon">🎬</div>
+          <h4>Masterful Direction</h4>
+          <p>Paul Haggis is known for a distinct visual approach that captures emotional intensity and brings complex human situations vividly to the screen.</p>
+        </div>
+        <div class="legacy-card">
+          <div class="icon">✍️</div>
+          <h4>Award-Winning Writing</h4>
+          <p>His screenplays reflect depth and nuance, presenting morally layered characters and situations that reveal the complexities of human behavior.</p>
+        </div>
+        <div class="legacy-card">
+          <div class="icon">🌍</div>
+          <h4>Global Resonance</h4>
+          <p>His work connects with audiences across cultures, presenting themes that feel relevant and relatable on a universal scale.</p>
+        </div>
+        <div class="legacy-card">
+          <div class="icon">🏆</div>
+          <h4>Oscar-Winning Legacy</h4>
+          <p>With multiple Academy Awards, his contributions to cinema highlight a lasting influence and recognition among the industry’s most respected creators.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FILMS ─── -->
+  <section id="films">
+    <div class="films-header reveal">
+      <div>
+        <div class="section-label">Paul Haggis Achievements</div>
+        <h2 class="section-title">Paul Haggis News and His Award-Winning Contributions</h2>
+      </div>
+      <a href="#cta" class="btn-outline">View All Updates</a>
+    </div>
+    <div class="films-grid">
+      <div class="film-card reveal">
+        <div class="film-card-banner"></div>
+        <div class="film-card-body">
+          
+          <h3>Crash</h3>
+          <p>Widely recognized for its powerful narrative, Crash earned the Academy Award for Best Picture, with Paul Haggis serving as writer and director, and also winning Best Original Screenplay.</p>
+          <div class="film-awards">
+            <span class="award-tag">🏆 Best Picture Oscar</span>
+            <span class="award-tag">Best Original Screenplay</span>
+          </div>
+        </div>
+      </div>
+      <div class="film-card reveal">
+        <div class="film-card-banner"></div>
+        <div class="film-card-body">
+          
+          <h3>Million Dollar Baby</h3>
+          <p>A deeply emotional drama that won multiple Oscars, including Best Picture, with Paul Haggis contributing as screenwriter and earning an Academy Award for Best Adapted Screenplay.</p>
+          <div class="film-awards">
+            <span class="award-tag">🏆 Best Picture Oscar at the Academy Awards</span>
+            <span class="award-tag">4 Academy Awards</span>
+          </div>
+        </div>
+      </div>
+      <div class="film-card reveal">
+        <div class="film-card-banner"></div>
+        <div class="film-card-body">
+         
+          <h3>Letters from Iwo Jima</h3>
+          <p>An acclaimed war film that received several award nominations, praised for its storytelling depth and perspective, co-written by Paul Haggis.</p>
+          <div class="film-awards">
+            <span class="award-tag">4 Oscar Nominations</span>
+            <span class="award-tag">Golden Globe Winner</span>
+          </div>
+        </div>
+      </div>
+      <div class="film-card reveal">
+        <div class="film-card-banner"></div>
+        <div class="film-card-body">
+          
+          <h3>In the Valley of Elah</h3>
+          <p>A critically appreciated film that earned award nominations and recognition for its compelling narrative and direction.</p>
+          <div class="film-awards">
+            <span class="award-tag">Critics' Choice Nominee</span>
+            <span class="award-tag">Golden Globe Nominee</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <!-- ─── INFLUENCE ─── -->
+  <section class="influence" id="influence">
+    <div class="section-label reveal" style="position:relative;z-index:1;">Industry Recognition</div>
+    <h2 class="section-title reveal" style="position:relative;z-index:1;color:var(--cream);">Developments Featured<br/>in Paul Haggis News</h2>
+    <div class="influence-grid">
+      <div class="influence-card reveal">
+        <div class="num">01</div>
+        <h4>Renewed Audience Interest in His Work</h4>
+        <p>Paul Haggis News has recently showcased a growing audience interest in revisiting his acclaimed films. Streaming platforms and film forums are seeing increased engagement with his projects, reflecting their timeless appeal.</p>
+      </div>
+      <div class="influence-card reveal">
+        <div class="num">02</div>
+        <h4>Industry Recognition and Ongoing Discussions</h4>
+        <p>Coverage in Paul Haggis News also points to ongoing recognition within the film industry. His contributions to screenwriting and direction continue to be discussed in film circles, panels, and retrospectives.</p>
+      </div>
+      <div class="influence-card reveal">
+        <div class="num">03</div>
+        <h4>Influence on Emerging Filmmakers</h4>
+        <p>A key highlight in Paul Haggis News is the way new-generation filmmakers are drawing inspiration from his narrative techniques. His ability to intertwine multiple storylines and human emotions remains a learning benchmark.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PR LINKS ─── -->
+  <section class="pr-section" id="press">
+    <div class="pr-section-header reveal">
+      <div class="section-label">Press Releases</div>
+      <h2 class="section-title">Go Beyond Headlines: Explore Exclusive Paul Haggis News Insights</h2>
+    </div>
+    <div class="pr-list reveal">
+
+      <a href="https://www.issuewire.com/paul-haggis-news-2026-the-story-behind-his-oscar-winning-career-1858177440692558" target="_blank" rel="noopener noreferrer" class="pr-row">
+        <div class="pr-row-left">
+          <span class="pr-num">01</span>
+          <div class="pr-text">
+           
+            <span class="pr-title">Paul Haggis News 2026: The Story Behind His Oscar-Winning Career</span>
+          </div>
+        </div>
+        <span class="pr-cta">Read Article &rarr;</span>
+      </a>
+
+      <a href="https://www.marketpressrelease.com/Paul-Haggis-News-A-Look-At-Recent-Headlines-And-Perspectives-1777365534.html" target="_blank" rel="noopener noreferrer" class="pr-row">
+        <div class="pr-row-left">
+          <span class="pr-num">02</span>
+          <div class="pr-text">
+            
+            <span class="pr-title">Paul Haggis News: A Look At Recent Headlines And Perspectives</span>
+          </div>
+        </div>
+        <span class="pr-cta">Read Article &rarr;</span>
+      </a>
+
+      <a href="https://www.pressreleasepoint.com/paul-haggis-news-oscar-winning-filmmaker-enters-new-creative-phase" target="_blank" rel="noopener noreferrer" class="pr-row">
+        <div class="pr-row-left">
+          <span class="pr-num">03</span>
+          <div class="pr-text">
+            
+            <span class="pr-title">Paul Haggis News: Oscar-Winning Filmmaker Enters New Creative Phase</span>
+          </div>
+        </div>
+        <span class="pr-cta">Read Article &rarr;</span>
+      </a>
+
+      <a href="https://medium.com/@paulhaggis.news/paul-haggis-news-the-quiet-strength-of-a-storyteller-who-chose-substance-over-spotlight-86900a809f00" target="_blank" rel="noopener noreferrer" class="pr-row">
+        <div class="pr-row-left">
+          <span class="pr-num">04</span>
+          <div class="pr-text">
+            
+            <span class="pr-title">Paul Haggis News: The Quiet Strength of a Storyteller Who Chose Substance Over Spotlight</span>
+          </div>
+        </div>
+        <span class="pr-cta">Read Article &rarr;</span>
+      </a>
+
+      <a href="https://vocal.media/journal/paul-haggis-news-the-legacy-behind-every-great-story" target="_blank" rel="noopener noreferrer" class="pr-row">
+        <div class="pr-row-left">
+          <span class="pr-num">05</span>
+          <div class="pr-text">
+           
+            <span class="pr-title">Paul Haggis News: The Legacy Behind Every Great Story</span>
+          </div>
+        </div>
+        <span class="pr-cta">Read Article &rarr;</span>
+      </a>
+
+
+    </div>
+  </section>
+
+  <!-- ─── CTA ─── -->
+  <section class="cta-section" id="cta">
+    <div class="cta-inner reveal">
+      <h2>Stay Ahead with the Latest Paul Haggis News</h2>
+      <p>Paul Haggis News serves as a central hub for anyone looking to stay informed about his work, influence, and presence in the film industry. With consistent updates and a positive lens on his contributions, the platform keeps readers connected to one of cinema’s most compelling filmmakers.</p>
+      
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ─── -->
+  <footer>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <h3>Paul Haggis News</h3>
+        <p>A dedicated news source for everything related to the acclaimed filmmaker Paul Haggis - celebrating his cinematic legacy and tracking his continuing influence on global cinema.</p>
+        <div class="footer-social">
+          
+          <a href="https://www.instagram.com/paulhaggis/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+          
+          <a href="https://www.youtube.com/@paul-haggis-news" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+            <svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#legacy">His Legacy</a></li>
+          <li><a href="#films">Achievements</a></li>
+          <li><a href="#influence">Industry Recognition</a></li>
+          <li><a href="#press">Press Releases</a></li>
+        
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Films</h4>
+        <ul>
+          <li><a href="#films">Crash (2004)</a></li>
+          <li><a href="#films">Million Dollar Baby</a></li>
+          <li><a href="#films">Letters from Iwo Jima</a></li>
+          <li><a href="#films">In the Valley of Elah</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 PaulHaggis.com — All rights reserved.</span>
+      
+    </div>
+  </footer>
+
+  <script>
+    const revealEls = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => entry.target.classList.add('visible'), i * 80);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    revealEls.forEach(el => observer.observe(el));
+
+    const header = document.querySelector('header');
+    window.addEventListener('scroll', () => {
+      header.style.boxShadow = window.scrollY > 50
+        ? '0 4px 30px rgba(26,18,8,0.08)'
+        : 'none';
+    });
+  </script>
+</body>
+</html>
